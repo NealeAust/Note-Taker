@@ -1,37 +1,37 @@
 const fs = require("fs");
 const router = require('express').Router();
-const saveNotes = require('../db/storeNotes');
-const uuid = require ("uuid")
+const uuid = require("uuid")
 
 
 router.get("/notes", (req, res) => {
     fs.readFile("./db/db.json", (err, data) => {
         if (err) throw err;
         console.log(data)
-var dataNotes = JSON.parse(data);
-console.log(dataNotes)
-res.json(dataNotes)
+        var dataNotes = JSON.parse(data);
+        console.log(dataNotes)
+        res.json(dataNotes)
     });
-    });
-  
+});
+
 router.post("/notes", (req, res) => {
-const newNote = req.body
+    const newNote = req.body
 
-fs.readFile("./db/db.json", (err, data) => {
-    if (err) throw err;
-    console.log(data)
-var dataNotes = JSON.parse(data);
-console.log(dataNotes)
-res.json(dataNotes)
-newNote.id = uuid;
-dataNotes.push(newNote);
+    fs.readFile("./db/db.json", (err, data) => {
+        if (err) throw err;
+        console.log(data)
+        // var dataNotes = JSON.parse(data);
+        console.log(dataNotes)
+        res.json(dataNotes)
+        newNote.id = uuid;
+        dataNotes.push(newNote);
+        console.log(newNote);
 
-fs.writeFile("./db/db.json", JSON.stringify(newNote), (err) => {
-if (err) throw err;
-res.json(newNote);
+        fs.writeFile("./db/db.json", JSON.stringify(newNote), (err) => {
+            if (err) throw err;
+            res.json(newNote);
 
-})
-})
+        })
+    })
 
 });
 
@@ -49,7 +49,7 @@ res.json(newNote);
 
 
 
-    
+
 
 
 
