@@ -85,15 +85,15 @@ The following step by step instructions describe how to use the application:
 ## Deployed Application and Screenshots
 
 ### Link to the deployed application
+*pushed to heroku*
 
-
+https://peaceful-chamber-86288.herokuapp.com/notes
 
 ## Screenshot
 
 **Landing Page**
 
 ![image](https://user-images.githubusercontent.com/115671306/219522206-92bcc734-b1f0-4ff0-bc79-91040c4053df.png)
-
 
 
 **Main Page**
