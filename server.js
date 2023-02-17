@@ -1,12 +1,9 @@
 // Dependencies
 const express = require("express")
-const path = require("path");
-const fs = require("fs");
 const apiRoutes = require("./routes/apiRoutes");
 const htmlRoutes = require("./routes/htmlRoutes");
 
-
-// initialize express app
+// Initialize express app
 const app = express();
 const PORT =3001;
 
@@ -18,11 +15,9 @@ app.use(express.json());
 
 app.use(express.static('public'));
 
-
 // Route middleware
 app.use('/api', apiRoutes);
 app.use('/', htmlRoutes);
-
 
 // Setup Listener
 app.listen(PORT, () => {
