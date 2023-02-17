@@ -90,6 +90,16 @@ The following step by step instructions describe how to use the application:
 
 ## Screenshot
 
+**Landing Page**
+
+![image](https://user-images.githubusercontent.com/115671306/219522206-92bcc734-b1f0-4ff0-bc79-91040c4053df.png)
+
+
+
+**Main Page**
+
+![image](https://user-images.githubusercontent.com/115671306/219521439-b84f5493-c9e8-4f3e-b0d4-d157fe326f35.png)
+
 
 ## Licence
 
